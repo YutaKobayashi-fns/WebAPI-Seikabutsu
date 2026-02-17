@@ -148,3 +148,4 @@ C:\Users\小林 祐太\Documents\kobayashi\WepApp\Seikabutsu\TaskManager\obj\Deb
 C:\Users\小林 祐太\Documents\kobayashi\WepApp\Seikabutsu\TaskManager\obj\Debug\net10.0\TaskManager.pdb
 C:\Users\小林 祐太\Documents\kobayashi\WepApp\Seikabutsu\TaskManager\obj\Debug\net10.0\TaskManager.genruntimeconfig.cache
 C:\Users\小林 祐太\Documents\kobayashi\WepApp\Seikabutsu\TaskManager\obj\Debug\net10.0\ref\TaskManager.dll
+C:\Users\小林 祐太\Documents\kobayashi\WepApp\Seikabutsu\TaskManager\obj\Debug\net10.0\TaskManager.sourcelink.json
