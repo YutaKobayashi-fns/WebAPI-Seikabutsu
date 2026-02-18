@@ -184,7 +184,7 @@ app.MapGet("/tasks/Get/search/date", async (TasksDb db, string date) =>
 // Read(MapGet系)==================================================
 
 // Upadte(MapPut系)==================================================
-// タスク更新
+// タスク更新機能
 app.MapPut("/tasks/Put/{id}", async (TasksDb db, InputTaskDto taskDto, int id) =>
 {
    Tasks? tasks = await db.Tasks.FindAsync(id); // DBのレコードを取得(ID指定)
@@ -240,7 +240,7 @@ app.MapPut("/tasks/Put/{id}", async (TasksDb db, InputTaskDto taskDto, int id) =
 }).WithTags("03-Update[MapPut]");
 
 
-// タスク作成年月日更新
+// タスク作成年月日更新機能
 app.MapPut("/tasks/Put/{id}/date", async (TasksDb db, InputCreateDate date, int id) =>
 {
    Tasks? tasks = await db.Tasks.FindAsync(id); // DBのレコードを取得(ID指定)
@@ -285,7 +285,7 @@ app.MapPut("/tasks/Put/{id}/date", async (TasksDb db, InputCreateDate date, int 
 // Upadte(MapPut系)==================================================
 
 // Delete(MapDelete系)===============================================
-// タスク削除
+// タスク削除機能
 app.MapDelete("/tasks/Delete/{id}", async (TasksDb db, int id) =>
 {
    Tasks? task = await db.Tasks.FindAsync(id);  // DBのレコードを取得(ID指定)
@@ -305,7 +305,7 @@ app.MapDelete("/tasks/Delete/{id}", async (TasksDb db, int id) =>
 }).WithTags("04-Delete[MapDelete]");
 
 
-// タスク削除(年月日指定)
+// タスク削除機能(年月日指定)
 app.MapDelete("/tasks/Delete/date)", async (TasksDb db, string date) =>
 {
    string dateFormat = "yyyy/MM/dd";   // 年月日フォーマット
